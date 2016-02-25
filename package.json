@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      "leapmotion-proxy",
+      "/Users/JollyRancher/Desktop/LeapMotionAndroidBridge/WebContent"
+    ]
+  ],
+  "_from": "leapmotion-proxy@latest",
+  "_id": "leapmotion-proxy@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/leapmotion-proxy",
+  "_npmUser": {
+    "email": "vincentsaluzzo@me.com",
+    "name": "vincentsaluzzo"
+  },
+  "_npmVersion": "1.1.71",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "leapmotion-proxy",
+    "raw": "leapmotion-proxy",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/leapmotion-proxy/-/leapmotion-proxy-0.1.1.tgz",
+  "_shasum": "7f925df54ce80a3f15066c05ecda457bb7f28c91",
+  "_shrinkwrap": null,
+  "_spec": "leapmotion-proxy",
+  "_where": "/Users/JollyRancher/Desktop/LeapMotionAndroidBridge/WebContent",
+  "analyze": false,
+  "author": {
+    "email": "vincentsaluzzo@me.com",
+    "name": "Vincent Saluzzo"
+  },
+  "bin": {
+    "leapmotion-proxy": "./leapmotion-proxy.js"
+  },
+  "bugs": {
+    "url": "https://github.com/itelios/leapmotion-proxy/issues"
+  },
+  "bundleDependencies": [
+    "ecstatic",
+    "union"
+  ],
+  "contributors": [],
+  "dependencies": {
+    "ecstatic": "*",
+    "union": "*",
+    "websocket": "1.0.8"
+  },
+  "description": "a simple LeapMotion WebSocket server proxy which recopy the Leap device's message to another web socket.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7f925df54ce80a3f15066c05ecda457bb7f28c91",
+    "tarball": "http://registry.npmjs.org/leapmotion-proxy/-/leapmotion-proxy-0.1.1.tgz"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "homepage": "https://github.com/itelios/leapmotion-proxy#readme",
+  "keywords": [
+    "leap",
+    "leapmotion",
+    "proxy",
+    "websocket"
+  ],
+  "license": "Apache",
+  "maintainers": [
+    {
+      "name": "vincentsaluzzo",
+      "email": "vincentsaluzzo@me.com"
+    }
+  ],
+  "name": "leapmotion-proxy",
+  "optionalDependencies": {},
+  "preferGlobal": false,
+  "readme": "# LeapMotion Proxy\n\nLeapMotion Proxy is a simple routing web socket server which transfer all message \nreceive from local LeapMotion websocket server to a non-localhost locked LeapMotion \nwebsocket server.\n\nCreated by Vincent Saluzzo.\n\nCopyright 2013 ITELIOS SAS. All rights reserved.\n\n\n# To Do\n\n...\n\n# How to Use\n\n    npm install leapmotion-proxy\n    npm start leapmotion-proxy\n    \nBy default, the websocket server port is `8889`. If you need to change this port \nyou could do this directly in the leapmotion-proxy.js file inside your node_modules\ndirectory.\n\n# License\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itelios/leapmotion-proxy.git"
+  },
+  "scripts": {
+    "postdeploy": "Thanks to install LeapMotion Proxy, write npm start now !",
+    "start": "node ./leapmotion-proxy.js",
+    "test": "vows --spec --isolate"
+  },
+  "version": "0.1.1"
+}
