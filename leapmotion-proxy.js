@@ -36,7 +36,9 @@ wsServer.on('request', function(request) {
     var needCloseLeapConnection = false;
     
     var wsConnection = request.accept(null, request.origin);
-    
+   
+	var m = 0;
+
     wsConnection.on('close', function(connection) {
         needCloseLeapConnection = true;
     });
@@ -55,8 +57,13 @@ wsServer.on('request', function(request) {
                 connection.close();
             } else {
                 if (message.type === 'utf8') {
+					if (m === 30 || ( message.utf8Data.indexOf( "\"gestures\":[{" ) > -1 ) ) {
                     wsConnection.sendUTF(message.utf8Data);
                     console.log("Received: '" + message.utf8Data + "'");
+					m = 0;
+					} else {
+						m += 1;
+					}
                 }
             }
         });
